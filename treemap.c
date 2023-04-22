@@ -201,7 +201,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     return parBuscado;
   }else
   {
-    TreeNode * ub_node;
+    TreeNode * ub_node = NULL;
     TreeNode * current = tree->current;
     if(current == NULL) return NULL;
 
