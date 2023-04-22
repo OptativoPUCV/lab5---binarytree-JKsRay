@@ -194,6 +194,38 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
+  Pair * parBuscado = searchTreeMap(tree, key);
+
+  if(parBuscado != NULL)
+  {
+    return parBuscado;
+  }else
+  {
+    TreeNode * ub_node;
+    TreeNode * current = tree->current;
+    if(current == NULL) return NULL;
+
+    while(current!=NULL)
+      {
+        if(tree->lower_than(key, current->pair->key)
+        {
+          ub_node = current->pair->key;
+          current = current->left;
+        }else
+        {
+          current=current->right;
+        }
+      }
+    if(ub_node =! NULL)
+    {
+      return ub_node->pair;
+    }
+    else
+    {
+      return NULL;
+    }
+  }
+  
     return NULL;
 }
 
