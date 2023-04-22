@@ -370,3 +370,9 @@ treemap.c:245:6: error: ‘parent’ undeclared (first use in this function)
 treemap.c:245:6: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 5b69f6f
+Sat 22 Apr 2023 07:34:13 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  25|1
+total_score: 60/70
+b69e9e8

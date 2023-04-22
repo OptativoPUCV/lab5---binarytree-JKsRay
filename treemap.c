@@ -242,7 +242,7 @@ Pair * nextTreeMap(TreeMap * tree) {
       }
   }
 
-  if(parent == NULL) return NULL;
+  if(tree->current->parent == NULL) return NULL;
 
   return NULL;
 }
