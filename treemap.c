@@ -199,33 +199,33 @@ Pair * upperBound(TreeMap * tree, void* key) {
   if(parBuscado != NULL)
   {
     return parBuscado;
-  }else
-  {
-    TreeNode * ub_node = NULL;
-    TreeNode * current = tree->current;
-    if(current == NULL) return NULL;
+  }
+  
+  TreeNode * ub_node = NULL;
+  TreeNode * current = tree->current;
+  if(current == NULL) return NULL;
 
-    while(current!=NULL)
-      {
-        if(tree->lower_than(key, current->pair->key))
-        {
-          ub_node = current;
-          current = current->left;
-        }else
-        {
-          current=current->right;
-        }
-      }
-    
-    if(ub_node != NULL)
+  while(current!=NULL)
+  {
+    if(tree->lower_than(key, current->pair->key))
     {
-      return ub_node->pair;
-    }
-    else
+      ub_node = current;
+      current = current->left;
+    }else
     {
-      return NULL;
+      current=current->right;
     }
   }
+    
+  if(ub_node != NULL)
+  {
+    return ub_node->pair;
+  }
+  else
+  {
+    return NULL;
+  }
+  
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
