@@ -100,9 +100,9 @@ TreeNode * minimum(TreeNode * x){
 
 
 void removeNode(TreeMap * tree, TreeNode* node) {
-  /*TreeNode * parent = node->parent;
+  TreeNode * parent = node->parent;
   
-  if(node->right == NULL && node->left==NULL)
+  /*if(node->right == NULL && node->left==NULL)
   {
     if(parent->left == node)
     {
