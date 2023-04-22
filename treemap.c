@@ -202,7 +202,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
   }
   
   TreeNode * ub_node = NULL;
-  TreeNode * current = tree->current;
+  TreeNode * current = tree->root;
   if(current == NULL) return NULL;
 
   while(current!=NULL)
