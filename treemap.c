@@ -230,7 +230,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     TreeNode * parent = tree->current->parent;
     while(parent!=NULL)
       {
-        if(tree->lowerthan(nodoAux->pair->key, parent->pair->key))
+        if(tree->lower_than(nodoAux->pair->key, parent->pair->key))
         {
           tree->current = parent;
           return parent->pair;
@@ -243,4 +243,6 @@ Pair * nextTreeMap(TreeMap * tree) {
   }
 
   if(parent == NULL) return NULL;
+
+  return NULL;
 }
