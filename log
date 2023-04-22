@@ -205,3 +205,20 @@ treemap.c:102:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 3d4a78b
+Sat 22 Apr 2023 06:52:07 AM UTC: 
+ treemap.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:159:40: error: lvalue required as left operand of assignment
+  159 |   if(node->left != NULL && node->right =! NULL)
+      |                                        ^
+treemap.c:162:5: error: expected ‘,’ or ‘;’ before ‘hijo’
+  162 |     hijo->pair = node->pair;
+      |     ^~~~
+treemap.c:161:16: error: unused variable ‘hijo’ [-Werror=unused-variable]
+  161 |     TreeNode * hijo = minimum(node->right)
+      |                ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6265dcc
