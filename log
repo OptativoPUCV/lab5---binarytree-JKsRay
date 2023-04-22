@@ -180,3 +180,8 @@ treemap.c:118:14: error: unused variable ‘hijo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 c9f5117
+Sat 22 Apr 2023 06:45:30 AM UTC: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|0
+2b9baa9
