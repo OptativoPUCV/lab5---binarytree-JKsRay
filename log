@@ -340,3 +340,22 @@ Sat 22 Apr 2023 07:11:40 AM UTC:
  tests:  22|2
 total_score: 50/70
 bf599d2
+Sat 22 Apr 2023 07:32:40 AM UTC: 
+ treemap.c | 19 +++++++++++++++++--
+ 1 file changed, 17 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:233:18: error: ‘TreeMap’ has no member named ‘lowerthan’; did you mean ‘lower_than’?
+  233 |         if(tree->lowerthan(nodoAux->pair->key, parent->pair->key))
+      |                  ^~~~~~~~~
+      |                  lower_than
+treemap.c:245:6: error: ‘parent’ undeclared (first use in this function)
+  245 |   if(parent == NULL) return NULL;
+      |      ^~~~~~
+treemap.c:245:6: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:246:1: error: control reaches end of non-void function [-Werror=return-type]
+  246 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+db36a91

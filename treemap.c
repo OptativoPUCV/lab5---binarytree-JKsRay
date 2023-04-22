@@ -223,9 +223,24 @@ Pair * nextTreeMap(TreeMap * tree) {
   if(nodoAux->right != NULL)
   {
     TreeNode * nextNode = minimum(nodoAux->right);
+    tree->current = nextNode;
     return nextNode->pair;
+  }else
+  {  
+    TreeNode * parent = tree->current->parent;
+    while(parent!=NULL)
+      {
+        if(tree->lowerthan(nodoAux->pair->key, parent->pair->key))
+        {
+          tree->current = parent;
+          return parent->pair;
+        }
+        else
+        {
+          parent = parent->parent;
+        }
+      }
   }
 
-  
-    return NULL;
+  if(parent == NULL) return NULL;
 }
