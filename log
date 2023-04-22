@@ -399,3 +399,17 @@ treemap.c:219:8: error: suggest parentheses around assignment used as truth valu
 cc1: all warnings being treated as errors
 Compilation failed
 38e34b0
+Sat 22 Apr 2023 07:50:48 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:219:16: error: assignment to ‘TreeNode *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  219 |     if(ub_node =! NULL)
+      |                ^
+treemap.c:219:8: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  219 |     if(ub_node =! NULL)
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+93e3c99
