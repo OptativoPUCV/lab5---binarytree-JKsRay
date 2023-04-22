@@ -222,3 +222,13 @@ treemap.c:161:16: error: unused variable ‘hijo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 6265dcc
+Sat 22 Apr 2023 06:52:14 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:159:40: error: lvalue required as left operand of assignment
+  159 |   if(node->left != NULL && node->right =! NULL)
+      |                                        ^
+Compilation failed
+448433d
